@@ -1,0 +1,36 @@
+body {
+  padding-top: 30px;
+  display: grid;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  background: #f2f2f2;
+}
+
+.container {
+  width: 420px;
+  background: #fff;
+  padding: 50px 60px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.container header {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 33px;
+}
+
+.indicator {
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px, 0;
+}
+
+.passInput {
+  height: 100%;
+  width: 100%;
+  padding-left: 15px;
+}/*# sourceMappingURL=pas.css.map */

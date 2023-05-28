@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>what can javascript do</h2>
+    <p id="demso">javascript can change the html content</p>
+    <button type="button" onclick="document.getElementById('demso').innerHTML='my firt javascript'">click me</button>
+
+    <h3>javascript can change HTML</h3>
+    <h4 id="myId">In this case</h4>
+    <button type="button" onclick="document.getElementById('myId').innerHTML='How are you doing'">Turn on the Light</button>
+
+    <h1 id="Good">lets what it bring out</h4>
+
+    <button type="button" onclick="document.getElementById('Good').innerHTML='I LOVE YOU SO MUCH LARA'">CLICK ME!</button>
+
+
+    <P id="demoS"> javascript can hide HTML</P>
+    <button type="button" 
+    onclick="document.getElementById('demoS').style.display='block'"> CLICK TO HIDE</button>
+
+    <p id="block" style="display:none;">Let's see how block works</p>
+    <button type="button"
+    onclick="document.getElementById('block').style.display='block'">CLICK ME!</button>
+
+    <h2>Demo JavaScript in Body</h2>
+
+    <p id="demo">A Paragraph</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <script>
+    function myFunction() {
+    document.getElementById("demo").innerHTML = "Good changed.";
+    }
+    </script>
+
+    <h1>my first web page</h1>
+    <p>my first Paragraph</p>
+
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('result').innerHTML = 2+4;
+    </script>
+
+    <button onclick="window.print()">Print this page</button>
+
+    <p id="addition"></p>
+    <script>
+        let a, b, c
+         a=5;
+         b=9;
+         c= a-b;
+        document.getElementById('addition').innerHTML=c;
+    </script>
+
+    <h1>Let me try my possible</h1>
+    <p>I hope i can get it</p>
+
+    <p id="demo1"></p>
+
+    <script>
+        let i, j, k;
+
+        i=55;
+        j=77;
+        k= i*j
+        document.getElementById('demo1').innerHTML = k;
+    </script>
+
+    <button type="button" onclick="myRealFunction()">CLICK ME</button>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        function myRealFunction(){
+            document.getElementById('demo2').innerHTML= "HELLO DOLLY";
+            document.getElementById('demo3').innerHTML= "How are you doing";
+        }
+    </script>
+
+    <button type="button" onclick="myArr()">CLICK ARRAY</button>
+    <p id="demo4"></p>
+    <script>
+        function myArr(){
+            const arr =[1,3,5,6,7,88];
+            document.getElementById('demo4').innerHTML = arr;
+        }
+
+    </script>
+
+    <p id="demo5"></p>
+
+    <script>
+        function myFunction(a,b){
+            return a*b;
+        }
+        var myResult = myFunction(3,5)
+        document.getElementById("demo5").innerHTML = myResult;
+    </script>
+
+    <p id="demo6"></p>
+    <script>
+        let e , f,g,h;
+        e =6; f=7;
+        h= (e+f)-e;
+        document.getElementById("demo6").innerHTML=h;
+    </script>
+
+    //create an object
+
+    <p id="demo7"></p>
+
+    <script>
+        const person = {
+            firstName: "Tajudeen",
+            lastName: 'Oluwashina',
+            age: " 30 years old"
+        };
+        document.getElementById("demo7").innerHTML = person.firstName + " " + person.lastName + " " +"is" + person.age;
+    </script>
+
+    <button onclick="displayDate()">The time is</button>
+    <script>
+        function displayDate(){
+            document.getElementById("demo9").innerHTML = Date();
+        }
+    </script>
+    <p id="demo9"></p>
+
+    <p id="dem10"></p>
+    
+    <p id="demo11"></p>
+    <script>
+        let str= "please locate where 'locate' is located";
+        str.indexOf('locate');
+        document.getElementById('demo11').innerHTML = str.indexOf('locate');
+    </script>
+
+
+    <p id="demo12"></p>
+    <script>
+        //JavaScript String search()
+        let myStr = " how are you doing";
+        myStr.lastIndexOf('good');
+        document.getElementById('demo12').innerHTML = myStr.lastIndexOf('good');
+
+        // both indexOf and lastIndexOf return -1 if the text is not found
+    </script>
+
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+
+    <script>
+        myARRAY =[ "TAJUDEEN", "OLUWASHINA", "IBRAHIM"];
+        myARRAY.sort();
+        myARRAY.push("PEDRO");
+        myARRAY.shift("YUSUF");
+        document.getElementById("demo13").innerHTML = myARRAY.sort();
+        document.getElementById("demo14").innerHTML = myARRAY.push("PEDRO");
+        document.getElementById("demo15").innerHTML = myARRAY.shift("YUSUF");
+    </script>
+
+    <button onclick="myArrayFunction()">TRY IT</button>
+    <p id="demo16"></p>
+    <script>
+        MyFruits = [ "BANANA", "APPLE", "MANGO"];
+        document.getElementById("demo16").innerHTML = MyFruits;
+
+        function myArrayFunction(){
+            MyFruits.push('lemo');
+            document.getElementById("demo16").innerHTML = MyFruits;
+        }
+    </script>
+
+    <P id="demo17"></P>
+
+    <script>
+        const Person =  []
+        Person[0] = "OLUWASHINA";
+        Person [1] = "IBRAHIM";
+        Person[2] = "BYNALAB";
+
+        document.getElementById("demo17").innerHTML = Person[0] + " " + Person.length;
+    </script>
+
+    <p id="demo18"></p>
+
+    <script>
+        const Fruits = ["MANGO", "APPLE", "BANANA"];
+        let type = typeof Fruits;
+
+        document.getElementById("demo18").innerHTML =type;
+    </script>
+
+    <p id="demo19"></p>
+
+    <script>
+       const array = [1,3,5, "kongi", "betting"];
+       array.unshift("LEMO");
+
+       document.getElementById("demo19").innerHTML =array;
+    </script>
+
+    <p id="demo20"></p>
+
+    <script>
+        const goodArr = ["ibrahim", "oluwashina", "olarewaju", "Alabi"];
+        goodArr.splice(2,1,"love", "myLife");
+        goodArr.reverse();
+        goodArr.sort();
+
+        document.getElementById("demo20").innerHTML =goodArr;
+
+    </script>
+
+    <p id="demo21"></p>
+
+    <script>
+        const badArr =[1,2,56,67,76,3,6,9,0];
+        badArr.sort(function (a,b){ return a-b});
+        document.getElementById("demo21").innerHTML = badArr;
+    </script>
+
+    <button onclick="myFunction1()">CLICK TO CHECK</button>
+    <button onclick="myFunction2()">CLICK TO MANAGE</button>
+
+    <p id="demo22"></p>
+    <p id="demo23"></p>
+
+    <script>
+        const Myarrays = [1,2,4,5,6,77,8,9,0];
+
+        document.getElementById("demo").innerHTML = Myarrays;
+
+        function myFunction1(){
+            Myarrays.sort();
+            document.getElementById("demo22").innerHTML = Myarrays;
+        }
+
+        function myFunction2(){
+            Myarrays.sort(function (a, b){ 
+                return a-b});
+            document.getElementById("demo23").innerHTML = Myarrays;
+        }
+
+    </script>
+
+    <p id="demo24"></p>
+
+    <script>
+        const dArrays = [ 1,3,4,56,78,9,5,43];
+        dArrays.sort(function (){
+             return 0.5 - Math.random()});
+        document.getElementById("demo24").innerHTML = dArrays;
+    </script>
+
+    Find the Highest (or Lowest) Array Value
+
+    <p id="demo25"></p>
+    <p id="demo26"></p>
+    <p id="demo27"></p>
+
+    <script>
+        const poorArray = [1,3,4,78,0,40,8,78,54];
+        poorArray.sort(function(a,b) {
+             return a-b});
+        let Good= poorArray[poorArray.length-1];
+        document.getElementById("demo25").innerHTML =Good;
+        document.getElementById("demo26").innerHTML = poorArray;
+        document.getElementById("demo27").innerHTML = poorArray[2];
+
+    </script>
+
+    sorting for descending order
+<p id="demo28"></p>
+
+<script>
+    const loopR = [4,5,7,8,0,3,50,9];
+    loopR.sort(function (a,b){
+        return b-a;
+    })
+
+    document.getElementById("demo28").innerHTML = loopR;
+</script>
+<p>The numbers are <span id="demo30"></span></p>
+<p>The highest number is <span id="demo29"></span></p>
+
+
+<script>
+
+    const arrAy = [1,5,7,09,34,89,65,200];
+    document.getElementById("demo30").innerHTML = arrAy;
+
+    function myArrMax(arr){
+        return Math.max.apply(null, arr);
+    }
+    document.getElementById("demo29").innerHTML = myArrMax(arrAy);
+
+</script>
+
+<P id="demo31"></P>
+
+<script>
+    const myP =[ 1,,4,5,6,3,89,09]
+
+   myP.sort( function(a,b){
+    return a-b;
+   })
+
+   document.getElementById("demo31").innerHTML = myP;
+
+</script>
+
+
+<P id="demo32"></P>
+
+<script>
+    const numbers1 = [9,8,3,6,5];
+    const numbers2= numbers1.map(myFunction);
+
+    function myFunction(value){
+        return value*2;
+    }
+
+    document.getElementById("demo32").innerHTML = numbers2;
+
+</script>
+
+<p id="demo33"></p>
+
+<script>
+    const numbers = [1,2,5,8,0,33,64,78,979];
+    const over5 = numbers.filter(myFunction);
+    function myFunction(value){
+        return value > 5;
+    }
+
+    document.getElementById("demo33").innerHTML = over5; 
+</script>
+
+<p id="demo34"></p>
+
+<script>
+    const d = new Date();
+    document.getElementById("demo34").innerHTML =d;
+</script>
+
+<p id="demo35"></p>
+
+<script>
+    const dd= new Date(2022-07-21);
+    dd.getFullYear();
+    document.getElementById("demo35").innerHTML=dd.getFullYear();
+</script>
+
+<p id="demo36"></p>
+
+<script>
+    function myFunction(a, b){
+        return a+b;
+    }
+    document.getElementById("demo36").innerHTML = myFunction(4,6);
+</script>
+<p id="demo37"></p>
+
+<script>
+    const myObj={
+        firstName: "Tajudeen",
+        lastName : "Olarewaju",
+        middleName: "Alabi",
+
+        fullName: function (){
+            return this.firstName + " " + this.lastName + " "+ this.middleName;
+        }
+    }
+    document.getElementById("demo37").innerHTML = myObj.fullName();
+
+</script>
+
+<p id="demo38"></p>
+
+<script>
+    const myObject ={
+        firstName : "Yusuf",
+        lastName: "Agbomabini",
+
+        fullName : function(){
+            return this.firstName + " " + this.lastName;
+        }
+
+    }
+
+    document.getElementById("demo38").innerHTML = myObject.firstName;
+   
+</script>
+
+<p id="demo39"></p>
+
+<script>
+
+    
+    class car {
+        constructor (name, year){
+            this.name = name;
+            this.year= year;
+        }
+    }
+    const myCar = new car("ford", 2014);
+    document.getElementById("demo39").innerHTML =myCar.name + " " + myCar.year;
+
+</script>
+
+<p id="demo40"></p>
+
+<script>
+    class Car {
+        constructor(name, year){
+            this.name= name;
+            this.year =year;
+        }
+
+        age() {
+            let date = new Date();
+            return this.getFullYear - this.year;
+        }
+    }
+
+    const mycar = new car("Ford", 2014);
+    document.getElementById("demo40").innerHTML =  "My car is " + mycar.age + " " + "years old";
+</script>
+
+<p id="demo41"></p>
+<p id="demo42"></p>
+
+<script>
+    function myDisplayer(some){
+        document.getElementById("demo41").innerHTML =some;
+    }
+    function myFunction1(){
+        myDisplayer("HELLO");
+    }
+
+    function myFunction(){
+        myDisplayer("GoodBye");
+    }
+
+    document.getElementById("demo41").innerHTML =myFunction1();
+    document.getElementById("demo42").innerHTML =myFunction();
+</script>
+
+<p id="demo43"></p>
+
+<script>
+    function myDisplayer(some){
+        document.getElementById("demo43").innerHTML =some;
+    }
+
+    function myCalculation (num1, num2){
+        let sum = num1 + num2;
+        return sum; 
+    }
+
+    let result =myCalculation(6,9);
+    myDisplayer(result);
+</script>
+</body>
+</html>

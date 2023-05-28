@@ -1,0 +1,95 @@
+.content {
+  max-width: 500px;
+  margin: auto;
+  padding: 15px 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2;
+}
+
+.topnav {
+  overflow: hidden;
+  font-weight: bold;
+  color: orangered;
+}
+.topnav p {
+  font-size: 24px;
+}
+
+button {
+  background-color: rgb(8, 105, 138);
+  color: white;
+  border: none;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: orangered;
+}
+
+.slidecontainer .range-slider {
+  width: 250px;
+}
+
+.password {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding-top: 30px;
+  display: grid;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  background: rgb(2, 71, 94);
+}
+
+.indicator {
+  height: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.indicator span {
+  width: 80%;
+  height: 80%;
+  background: lightgrey;
+  border-radius: 5px;
+  position: relative;
+}
+
+.indicator span.meduim {
+  margin: 0 3px;
+}
+
+.indicator span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  border-radius: 5px;
+}
+
+.indicator span.weak:before {
+  background-color: #ff4757;
+}
+
+.indicator span.medium:before {
+  background-color: orange;
+}
+
+.indicator span.strong:before {
+  background-color: green;
+}/*# sourceMappingURL=tj.css.map */
